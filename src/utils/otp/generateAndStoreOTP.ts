@@ -1,6 +1,6 @@
 import redisClient from "../../config/redisConfig.js";
-import { isUserBlocked } from "../block/checkIsUserBlocked.js";
-import checkRateLimit from "../block/checkRateLimiting.js";
+import { isUserBlocked } from "../block-user/checkIsUserBlocked.js";
+import checkRateLimit from "../ip/checkRateLimiting.js";
 import { addOtpToHistory, checkOtpHistory } from "./addOtpToHistory.js";
 import { otpGenerator } from "./otpGenerator.js";
 

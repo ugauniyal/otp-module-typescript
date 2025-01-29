@@ -1,7 +1,7 @@
 import redisClient from "../../config/redisConfig.js";
-import { isUserBlocked } from "../block/checkIsUserBlocked.js";
-import checkRateLimit from "../block/checkRateLimiting.js";
-import { handleUserBlock } from "../block/handleUserBlock.js";
+import { isUserBlocked } from "../block-user/checkIsUserBlocked.js";
+import checkRateLimit from "../ip/checkRateLimiting.js";
+import { handleUserBlock } from "../block-user/handleUserBlock.js";
 
 export async function otpVerification(user_id: string, otp: string, ip: string): Promise<-1 | 0 | 1> {
     try {
